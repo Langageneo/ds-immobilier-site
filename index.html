@@ -1,101 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>DS IMMOBILIER</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS IMMOBILIER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <img src="assets/logo.png" alt="DS IMMOBILIER" class="logo">
-        <div class="brand-text">
-          <strong>DS IMMOBILIER</strong>
-          <small>Agence immobilière • Treichville</small>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="assets/logo.png" alt="DS IMMOBILIER Logo" class="logo">
+            <nav class="nav">
+                <a href="#home">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-      </div>
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#about">À propos</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <img src="assets/hero.jpg" alt="Famille recevant les clés" class="hero-img">
-    <div class="hero-overlay">
-      <div class="container hero-content">
-        <h1>Bienvenue chez <span>DS IMMOBILIER</span></h1>
-        <p>Publication, vente, achat et location — un accompagnement professionnel à Treichville.</p>
-        <a class="btn" href="#contact">Nous contacter</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="section services">
-    <div class="container">
-      <h2>Nos services</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="assets/maison1.jpg" alt="Achat">
-          <h3>Achat</h3>
-          <p>Trouvez le logement idéal pour vous et votre famille.</p>
-        </article>
-        <article class="card">
-          <img src="assets/maison2.jpg" alt="Vente">
-          <h3>Vente</h3>
-          <p>Vendez vite et au meilleur prix grâce à notre visibilité.</p>
-        </article>
-        <article class="card">
-          <img src="assets/chantier1.jpg" alt="Publicité immobilière">
-          <h3>Publicité immobilière</h3>
-          <p>Photos, annonces et campagnes pour maximiser l'impact de vos biens.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2>À propos</h2>
-      <p>DS IMMOBILIER accompagne particuliers et professionnels : expertise locale, marketing visuel et proximité. Notre priorité : la confiance et la visibilité de vos biens.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-    <div class="container contact-grid">
-      <div>
-        <h2>Contactez-nous</h2>
-        <p><strong>Adresse:</strong> Treichville, Avenue 17, Rue 42</p>
-        <p><strong>WhatsApp:</strong> 07 03 10 28 28</p>
-        <p><strong>Email:</strong> <a href="mailto:Douaservice@gmail.com">Douaservice@gmail.com</a></p>
-        <p><a class="link-map" href="https://www.google.com/maps/place/Treichville,+Abidjan,+C%C3%B4te+d'Ivoire/" target="_blank" rel="noopener">Voir sur Google Maps →</a></p>
-      </div>
-      <div>
-        <!-- petit encart visuel / pourra être remplacé par une carte intégrée plus tard -->
-        <div class="contact-card">
-          <img src="assets/logo.png" alt="DS IMMOBILIER logo small">
-          <p>DS IMMOBILIER — Créons ensemble la visibilité de vos biens.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="assets/hero.jpg" alt="Immeuble DS IMMOBILIER" class="hero-img">
+        <div class="hero-text">
+            <h1>Bienvenue chez DS IMMOBILIER</h1>
+            <p>L'agence immobilière qui vous accompagne dans vos projets</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 DS IMMOBILIER — Tous droits réservés</p>
-    </div>
-  </footer>
+    <!-- Services / Biens -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Biens</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/maison1.jpg" alt="Maison 1">
+                    <h3>Maison Moderne</h3>
+                    <p>Confort et sécurité pour votre famille.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/chantier1.jpg" alt="Chantier 1">
+                    <h3>Projet en construction</h3>
+                    <p>Investissez dans l'avenir avec nos chantiers.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/maison2.jpg" alt="Maison 2">
+                    <h3>Appartement</h3>
+                    <p>Idéalement situé et prêt à emménager.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <p>Treichville, avenue 17 rue 42</p>
+            <p>WhatsApp : 07 03 10 28 28</p>
+            <p>Email : <a href="mailto:Douaservice@gmail.com">Douaservice@gmail.com</a></p>
+            <p><a href="https://www.google.com/maps?q=Treichville" target="_blank">Voir sur Google Maps</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 DS IMMOBILIER. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>

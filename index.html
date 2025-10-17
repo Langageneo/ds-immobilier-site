@@ -25,7 +25,7 @@
 
 <!-- Hero / Bannière -->
 <section class="hero">
-    <img src="assets/hero.jpg" alt="Famille recevant les clés devant un immeuble" class="hero-img">
+    <div class="hero-overlay"></div>
     <div class="hero-text">
         <h1>Bienvenue chez DS IMMOBILIER</h1>
         <p>L’achat, la vente et la location de biens immobiliers à Treichville</p>
@@ -76,14 +76,33 @@
     <p>© 2025 DS IMMOBILIER. Tous droits réservés.</p>
 </footer>
 
-<!-- Smooth Scroll -->
+<!-- JS -->
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e){
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e){
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
     });
-});
+
+    // Halo progressif sur hero
+    const heroTitle = document.querySelector('.hero-text h1');
+    const heroPara = document.querySelector('.hero-text p');
+    const heroBtn = document.querySelector('.hero-text .btn-primary');
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const maxScroll = 200;
+        const glow = Math.min(scrollTop / maxScroll, 1) * 20;
+
+        const shadowTitle = `0 0 ${glow}px rgba(0,123,255,0.8), 0 0 ${glow/2}px rgba(0,255,255,0.6)`;
+        const shadowOther = `0 0 ${glow/1.5}px rgba(0,123,255,0.7), 0 0 ${glow/3}px rgba(0,255,255,0.5)`;
+
+        heroTitle.style.textShadow = shadowTitle;
+        heroPara.style.textShadow = shadowOther;
+        heroBtn.style.boxShadow = `0 0 ${glow/2}px rgba(0,123,255,0.7), 0 0 ${glow/4}px rgba(0,255,255,0.5)`;
+    });
 </script>
 
 </body>
